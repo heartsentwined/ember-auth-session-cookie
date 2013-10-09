@@ -1,4 +1,3 @@
-#= require jquery.cookie
 $ = jQuery
 class Em.Auth.CookieAuthSession extends Em.Auth.AuthSession
   retrieve: (key, opts) ->
