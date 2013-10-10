@@ -5,3 +5,4 @@ Em.onLoad 'Ember.Application', (application) ->
 
     initialize: (container, app) ->
       app.register 'authSession:cookie', Em.Auth.CookieAuthSession
+      app.inject 'authSession:cookie', 'auth', 'auth:main'
