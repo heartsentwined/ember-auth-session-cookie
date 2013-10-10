@@ -4,5 +4,6 @@ Em.onLoad 'Ember.Application', (application) ->
     before: 'ember-auth-load'
 
     initialize: (container, app) ->
-      app.register 'authSession:cookie', Em.Auth.CookieAuthSession
+      app.register 'authSession:cookie', Em.Auth.CookieAuthSession, \
+      { singleton: true }
       app.inject 'authSession:cookie', 'auth', 'auth:main'
