@@ -12,3 +12,8 @@ Store session data in cookies.
 App.Auth = Em.Auth.extend
   session: 'cookie'
 ```
+
+License
+=======
+
+MIT
